@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AB26A064835FDFD5326F28D /* Pods_BlueTeethFirst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3890115F095BC39F5F7231DD /* Pods_BlueTeethFirst.framework */; };
+		60F6FFE02302A66200311E08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F6FFDF2302A66200311E08 /* AppDelegate.m */; };
+		60F6FFE32302A66200311E08 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F6FFE22302A66200311E08 /* ViewController.m */; };
+		60F6FFE62302A66200311E08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F6FFE42302A66200311E08 /* Main.storyboard */; };
+		60F6FFE82302A66300311E08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60F6FFE72302A66300311E08 /* Assets.xcassets */; };
+		60F6FFEB2302A66300311E08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F6FFE92302A66300311E08 /* LaunchScreen.storyboard */; };
+		60F6FFEE2302A66300311E08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F6FFED2302A66300311E08 /* main.m */; };
+		7664104323279D8F00D7198B /* CSRPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 7664103923279D8F00D7198B /* CSRPeripheral.m */; };
+		7664104423279D9000D7198B /* CSRConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7664103A23279D8F00D7198B /* CSRConnectionManager.m */; };
+		7664104523279D9000D7198B /* CSRBLEUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7664103C23279D8F00D7198B /* CSRBLEUtil.m */; };
+		7664104623279D9000D7198B /* CSRCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7664103D23279D8F00D7198B /* CSRCallbacks.m */; };
+		7664104C23279DC500D7198B /* LogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7664104A23279DC500D7198B /* LogUtil.m */; };
+		7664104F23279DD300D7198B /* LogHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7664104E23279DD300D7198B /* LogHelper.mm */; };
+		7664105823279DF900D7198B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7664105023279DF800D7198B /* CoreTelephony.framework */; };
+		7664105923279DF900D7198B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7664105123279DF800D7198B /* UIKit.framework */; };
+		7664105A23279DF900D7198B /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7664105223279DF800D7198B /* libresolv.9.tbd */; };
+		7664105B23279DF900D7198B /* mars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7664105323279DF800D7198B /* mars.framework */; };
+		7664105C23279DF900D7198B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7664105423279DF800D7198B /* Foundation.framework */; };
+		7664105D23279DF900D7198B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7664105523279DF800D7198B /* SystemConfiguration.framework */; };
+		7664105E23279DF900D7198B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7664105623279DF900D7198B /* CoreBluetooth.framework */; };
+		7664105F23279DF900D7198B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7664105723279DF900D7198B /* libz.tbd */; };
+		7664106E23279F2D00D7198B /* GSdk.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7664106223279F2D00D7198B /* GSdk.mm */; };
+		7664106F23279F2D00D7198B /* GProfile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7664106423279F2D00D7198B /* GProfile.mm */; };
+		7664107023279F2D00D7198B /* GMessageTask.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7664106523279F2D00D7198B /* GMessageTask.mm */; };
+		7664107123279F2D00D7198B /* GSocketInd.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7664106623279F2D00D7198B /* GSocketInd.mm */; };
+		7664107223279F2D00D7198B /* GErrorCode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7664106723279F2D00D7198B /* GErrorCode.mm */; };
+		7664107323279F2D00D7198B /* GMessageTaskQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7664106823279F2D00D7198B /* GMessageTaskQueue.m */; };
+		7664109123279F6F00D7198B /* app_callback.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7664108423279F6F00D7198B /* app_callback.mm */; };
+		7664109223279F6F00D7198B /* shortlink_packer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7664108623279F6F00D7198B /* shortlink_packer.cc */; };
+		7664109323279F6F00D7198B /* longlink_packer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7664108723279F6F00D7198B /* longlink_packer.cc */; };
+		7664109423279F6F00D7198B /* stn_callback.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7664108A23279F6F00D7198B /* stn_callback.mm */; };
+		7664109523279F6F00D7198B /* TTLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7664108E23279F6F00D7198B /* TTLog.m */; };
+		766410A323279F9E00D7198B /* NetworkEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7664109723279F9E00D7198B /* NetworkEvent.m */; };
+		766410A423279F9E00D7198B /* NetworkStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 7664109923279F9E00D7198B /* NetworkStatus.m */; };
+		766410A523279F9E00D7198B /* CGITask.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7664109C23279F9E00D7198B /* CGITask.mm */; };
+		766410A623279F9E00D7198B /* NetworkService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 766410A023279F9E00D7198B /* NetworkService.mm */; };
+		76F8EBED230A4DA6009A3484 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F8EBEC230A4DA6009A3484 /* TableViewController.m */; };
+		76F8EBF1230A5078009A3484 /* BlueHeart.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F8EBF0230A5078009A3484 /* BlueHeart.m */; };
+		76F8EBF5230A5472009A3484 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F8EBF4230A5472009A3484 /* TableViewCell.m */; };
+		76F8EBF9230A7939009A3484 /* InfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F8EBF8230A7939009A3484 /* InfoTableViewController.m */; };
+		76F8EBFC230AA0CA009A3484 /* PeriCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F8EBFB230AA0CA009A3484 /* PeriCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00282DFEAA1A2A631A13F34D /* Pods-BlueTeethFirst.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueTeethFirst.debug.xcconfig"; path = "Target Support Files/Pods-BlueTeethFirst/Pods-BlueTeethFirst.debug.xcconfig"; sourceTree = "<group>"; };
+		3890115F095BC39F5F7231DD /* Pods_BlueTeethFirst.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueTeethFirst.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60F6FFDB2302A66200311E08 /* BlueTeethFirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueTeethFirst.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60F6FFDE2302A66200311E08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		60F6FFDF2302A66200311E08 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		60F6FFE12302A66200311E08 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		60F6FFE22302A66200311E08 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		60F6FFE52302A66200311E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60F6FFE72302A66300311E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60F6FFEA2302A66300311E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		60F6FFEC2302A66300311E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60F6FFED2302A66300311E08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7664103923279D8F00D7198B /* CSRPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRPeripheral.m; sourceTree = "<group>"; };
+		7664103A23279D8F00D7198B /* CSRConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRConnectionManager.m; sourceTree = "<group>"; };
+		7664103B23279D8F00D7198B /* CSRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRConstants.h; sourceTree = "<group>"; };
+		7664103C23279D8F00D7198B /* CSRBLEUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRBLEUtil.m; sourceTree = "<group>"; };
+		7664103D23279D8F00D7198B /* CSRCallbacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRCallbacks.m; sourceTree = "<group>"; };
+		7664103E23279D8F00D7198B /* CSRConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRConnectionManager.h; sourceTree = "<group>"; };
+		7664103F23279D8F00D7198B /* CSRPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRPeripheral.h; sourceTree = "<group>"; };
+		7664104023279D8F00D7198B /* CSRBLEUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRBLEUtil.h; sourceTree = "<group>"; };
+		7664104123279D8F00D7198B /* BTLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLibrary.h; sourceTree = "<group>"; };
+		7664104223279D8F00D7198B /* CSRCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRCallbacks.h; sourceTree = "<group>"; };
+		7664104A23279DC500D7198B /* LogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogUtil.m; sourceTree = "<group>"; };
+		7664104B23279DC500D7198B /* LogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogUtil.h; sourceTree = "<group>"; };
+		7664104D23279DD300D7198B /* LogHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogHelper.h; sourceTree = "<group>"; };
+		7664104E23279DD300D7198B /* LogHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LogHelper.mm; sourceTree = "<group>"; };
+		7664105023279DF800D7198B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		7664105123279DF800D7198B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7664105223279DF800D7198B /* libresolv.9.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		7664105323279DF800D7198B /* mars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mars.framework; sourceTree = "<group>"; };
+		7664105423279DF800D7198B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7664105523279DF800D7198B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7664105623279DF900D7198B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		7664105723279DF900D7198B /* libz.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7664106023279E1200D7198B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7664106223279F2D00D7198B /* GSdk.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GSdk.mm; sourceTree = "<group>"; };
+		7664106323279F2D00D7198B /* GSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSdk.h; sourceTree = "<group>"; };
+		7664106423279F2D00D7198B /* GProfile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GProfile.mm; sourceTree = "<group>"; };
+		7664106523279F2D00D7198B /* GMessageTask.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GMessageTask.mm; sourceTree = "<group>"; };
+		7664106623279F2D00D7198B /* GSocketInd.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GSocketInd.mm; sourceTree = "<group>"; };
+		7664106723279F2D00D7198B /* GErrorCode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GErrorCode.mm; sourceTree = "<group>"; };
+		7664106823279F2D00D7198B /* GMessageTaskQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMessageTaskQueue.m; sourceTree = "<group>"; };
+		7664106923279F2D00D7198B /* GErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GErrorCode.h; sourceTree = "<group>"; };
+		7664106A23279F2D00D7198B /* GMessageTaskQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMessageTaskQueue.h; sourceTree = "<group>"; };
+		7664106B23279F2D00D7198B /* GProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GProfile.h; sourceTree = "<group>"; };
+		7664106C23279F2D00D7198B /* GSocketInd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSocketInd.h; sourceTree = "<group>"; };
+		7664106D23279F2D00D7198B /* GMessageTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMessageTask.h; sourceTree = "<group>"; };
+		7664108423279F6F00D7198B /* app_callback.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = app_callback.mm; sourceTree = "<group>"; };
+		7664108523279F6F00D7198B /* shortlink_packer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shortlink_packer.h; sourceTree = "<group>"; };
+		7664108623279F6F00D7198B /* shortlink_packer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shortlink_packer.cc; sourceTree = "<group>"; };
+		7664108723279F6F00D7198B /* longlink_packer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = longlink_packer.cc; sourceTree = "<group>"; };
+		7664108823279F6F00D7198B /* TTLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLog.h; sourceTree = "<group>"; };
+		7664108923279F6F00D7198B /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		7664108A23279F6F00D7198B /* stn_callback.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = stn_callback.mm; sourceTree = "<group>"; };
+		7664108B23279F6F00D7198B /* stn_callback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stn_callback.h; sourceTree = "<group>"; };
+		7664108C23279F6F00D7198B /* longlink_packer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = longlink_packer.h; sourceTree = "<group>"; };
+		7664108D23279F6F00D7198B /* app_callback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app_callback.h; sourceTree = "<group>"; };
+		7664108E23279F6F00D7198B /* TTLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLog.m; sourceTree = "<group>"; };
+		7664108F23279F6F00D7198B /* PushNotifyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotifyDelegate.h; sourceTree = "<group>"; };
+		7664109023279F6F00D7198B /* stnproto_logic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stnproto_logic.h; sourceTree = "<group>"; };
+		7664109723279F9E00D7198B /* NetworkEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkEvent.m; sourceTree = "<group>"; };
+		7664109823279F9E00D7198B /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		7664109923279F9E00D7198B /* NetworkStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkStatus.m; sourceTree = "<group>"; };
+		7664109A23279F9E00D7198B /* NetworkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkDelegate.h; sourceTree = "<group>"; };
+		7664109B23279F9E00D7198B /* UINotifyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINotifyDelegate.h; sourceTree = "<group>"; };
+		7664109C23279F9E00D7198B /* CGITask.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CGITask.mm; sourceTree = "<group>"; };
+		7664109D23279F9E00D7198B /* CGITask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGITask.h; sourceTree = "<group>"; };
+		7664109E23279F9E00D7198B /* NetworkEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkEvent.h; sourceTree = "<group>"; };
+		7664109F23279F9E00D7198B /* NetworkStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkStatus.h; sourceTree = "<group>"; };
+		766410A023279F9E00D7198B /* NetworkService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NetworkService.mm; sourceTree = "<group>"; };
+		766410A123279F9E00D7198B /* CommandID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandID.h; sourceTree = "<group>"; };
+		766410A223279F9E00D7198B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		76F8EBEB230A4DA6009A3484 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		76F8EBEC230A4DA6009A3484 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		76F8EBEF230A5078009A3484 /* BlueHeart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueHeart.h; sourceTree = "<group>"; };
+		76F8EBF0230A5078009A3484 /* BlueHeart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueHeart.m; sourceTree = "<group>"; };
+		76F8EBF3230A5472009A3484 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		76F8EBF4230A5472009A3484 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		76F8EBF7230A7939009A3484 /* InfoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoTableViewController.h; sourceTree = "<group>"; };
+		76F8EBF8230A7939009A3484 /* InfoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewController.m; sourceTree = "<group>"; };
+		76F8EBFA230AA0CA009A3484 /* PeriCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeriCell.h; sourceTree = "<group>"; };
+		76F8EBFB230AA0CA009A3484 /* PeriCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeriCell.m; sourceTree = "<group>"; };
+		8A394DCD8FD7F4AF10944930 /* Pods-BlueTeethFirst.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueTeethFirst.release.xcconfig"; path = "Target Support Files/Pods-BlueTeethFirst/Pods-BlueTeethFirst.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60F6FFD82302A66200311E08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7664105A23279DF900D7198B /* libresolv.9.tbd in Frameworks */,
+				7664105D23279DF900D7198B /* SystemConfiguration.framework in Frameworks */,
+				7664105E23279DF900D7198B /* CoreBluetooth.framework in Frameworks */,
+				7664105C23279DF900D7198B /* Foundation.framework in Frameworks */,
+				7664105823279DF900D7198B /* CoreTelephony.framework in Frameworks */,
+				7664105923279DF900D7198B /* UIKit.framework in Frameworks */,
+				7664105B23279DF900D7198B /* mars.framework in Frameworks */,
+				7664105F23279DF900D7198B /* libz.tbd in Frameworks */,
+				0AB26A064835FDFD5326F28D /* Pods_BlueTeethFirst.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31A160D27DBFF2363EE85DD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7664105623279DF900D7198B /* CoreBluetooth.framework */,
+				7664105023279DF800D7198B /* CoreTelephony.framework */,
+				7664105423279DF800D7198B /* Foundation.framework */,
+				7664105223279DF800D7198B /* libresolv.9.tbd */,
+				7664105723279DF900D7198B /* libz.tbd */,
+				7664105323279DF800D7198B /* mars.framework */,
+				7664105523279DF800D7198B /* SystemConfiguration.framework */,
+				7664105123279DF800D7198B /* UIKit.framework */,
+				3890115F095BC39F5F7231DD /* Pods_BlueTeethFirst.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60F6FFD22302A66200311E08 = {
+			isa = PBXGroup;
+			children = (
+				7664106023279E1200D7198B /* PrefixHeader.pch */,
+				7664109623279F9E00D7198B /* Bussiness */,
+				766410A123279F9E00D7198B /* CommandID.h */,
+				766410A223279F9E00D7198B /* Constants.h */,
+				7664108323279F6F00D7198B /* PublicComponentV2 */,
+				7664106123279F2D00D7198B /* Geeeeeee */,
+				60F6FFDD2302A66200311E08 /* BlueTeethFirst */,
+				60F6FFDC2302A66200311E08 /* Products */,
+				BBB6568F0E2D0CE4F46792A5 /* Pods */,
+				31A160D27DBFF2363EE85DD7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		60F6FFDC2302A66200311E08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60F6FFDB2302A66200311E08 /* BlueTeethFirst.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60F6FFDD2302A66200311E08 /* BlueTeethFirst */ = {
+			isa = PBXGroup;
+			children = (
+				7664104A23279DC500D7198B /* LogUtil.m */,
+				7664104B23279DC500D7198B /* LogUtil.h */,
+				7664104D23279DD300D7198B /* LogHelper.h */,
+				7664104E23279DD300D7198B /* LogHelper.mm */,
+				7664103823279D8F00D7198B /* LBluetooth */,
+				60F6FFF42303BB8700311E08 /* Supporting Files */,
+				60F6FFE12302A66200311E08 /* ViewController.h */,
+				60F6FFE22302A66200311E08 /* ViewController.m */,
+				60F6FFEC2302A66300311E08 /* Info.plist */,
+				76F8EBEE230A4DAE009A3484 /* Controller */,
+				76F8EBF2230A507B009A3484 /* Model */,
+				76F8EBF6230A5476009A3484 /* CellView */,
+			);
+			path = BlueTeethFirst;
+			sourceTree = "<group>";
+		};
+		60F6FFF42303BB8700311E08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60F6FFDE2302A66200311E08 /* AppDelegate.h */,
+				60F6FFDF2302A66200311E08 /* AppDelegate.m */,
+				60F6FFE42302A66200311E08 /* Main.storyboard */,
+				60F6FFE72302A66300311E08 /* Assets.xcassets */,
+				60F6FFE92302A66300311E08 /* LaunchScreen.storyboard */,
+				60F6FFED2302A66300311E08 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7664103823279D8F00D7198B /* LBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				7664103923279D8F00D7198B /* CSRPeripheral.m */,
+				7664103A23279D8F00D7198B /* CSRConnectionManager.m */,
+				7664103B23279D8F00D7198B /* CSRConstants.h */,
+				7664103C23279D8F00D7198B /* CSRBLEUtil.m */,
+				7664103D23279D8F00D7198B /* CSRCallbacks.m */,
+				7664103E23279D8F00D7198B /* CSRConnectionManager.h */,
+				7664103F23279D8F00D7198B /* CSRPeripheral.h */,
+				7664104023279D8F00D7198B /* CSRBLEUtil.h */,
+				7664104123279D8F00D7198B /* BTLibrary.h */,
+				7664104223279D8F00D7198B /* CSRCallbacks.h */,
+			);
+			path = LBluetooth;
+			sourceTree = "<group>";
+		};
+		7664106123279F2D00D7198B /* Geeeeeee */ = {
+			isa = PBXGroup;
+			children = (
+				7664106223279F2D00D7198B /* GSdk.mm */,
+				7664106323279F2D00D7198B /* GSdk.h */,
+				7664106423279F2D00D7198B /* GProfile.mm */,
+				7664106523279F2D00D7198B /* GMessageTask.mm */,
+				7664106623279F2D00D7198B /* GSocketInd.mm */,
+				7664106723279F2D00D7198B /* GErrorCode.mm */,
+				7664106823279F2D00D7198B /* GMessageTaskQueue.m */,
+				7664106923279F2D00D7198B /* GErrorCode.h */,
+				7664106A23279F2D00D7198B /* GMessageTaskQueue.h */,
+				7664106B23279F2D00D7198B /* GProfile.h */,
+				7664106C23279F2D00D7198B /* GSocketInd.h */,
+				7664106D23279F2D00D7198B /* GMessageTask.h */,
+			);
+			path = Geeeeeee;
+			sourceTree = "<group>";
+		};
+		7664108323279F6F00D7198B /* PublicComponentV2 */ = {
+			isa = PBXGroup;
+			children = (
+				7664108423279F6F00D7198B /* app_callback.mm */,
+				7664108523279F6F00D7198B /* shortlink_packer.h */,
+				7664108623279F6F00D7198B /* shortlink_packer.cc */,
+				7664108723279F6F00D7198B /* longlink_packer.cc */,
+				7664108823279F6F00D7198B /* TTLog.h */,
+				7664108923279F6F00D7198B /* Singleton.h */,
+				7664108A23279F6F00D7198B /* stn_callback.mm */,
+				7664108B23279F6F00D7198B /* stn_callback.h */,
+				7664108C23279F6F00D7198B /* longlink_packer.h */,
+				7664108D23279F6F00D7198B /* app_callback.h */,
+				7664108E23279F6F00D7198B /* TTLog.m */,
+				7664108F23279F6F00D7198B /* PushNotifyDelegate.h */,
+				7664109023279F6F00D7198B /* stnproto_logic.h */,
+			);
+			path = PublicComponentV2;
+			sourceTree = "<group>";
+		};
+		7664109623279F9E00D7198B /* Bussiness */ = {
+			isa = PBXGroup;
+			children = (
+				7664109723279F9E00D7198B /* NetworkEvent.m */,
+				7664109823279F9E00D7198B /* NetworkService.h */,
+				7664109923279F9E00D7198B /* NetworkStatus.m */,
+				7664109A23279F9E00D7198B /* NetworkDelegate.h */,
+				7664109B23279F9E00D7198B /* UINotifyDelegate.h */,
+				7664109C23279F9E00D7198B /* CGITask.mm */,
+				7664109D23279F9E00D7198B /* CGITask.h */,
+				7664109E23279F9E00D7198B /* NetworkEvent.h */,
+				7664109F23279F9E00D7198B /* NetworkStatus.h */,
+				766410A023279F9E00D7198B /* NetworkService.mm */,
+			);
+			name = Bussiness;
+			path = "../LS2Test/LS2Test/NetWork Mars/Bussiness";
+			sourceTree = "<group>";
+		};
+		76F8EBEE230A4DAE009A3484 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				76F8EBEB230A4DA6009A3484 /* TableViewController.h */,
+				76F8EBEC230A4DA6009A3484 /* TableViewController.m */,
+				76F8EBF7230A7939009A3484 /* InfoTableViewController.h */,
+				76F8EBF8230A7939009A3484 /* InfoTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		76F8EBF2230A507B009A3484 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76F8EBEF230A5078009A3484 /* BlueHeart.h */,
+				76F8EBF0230A5078009A3484 /* BlueHeart.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76F8EBF6230A5476009A3484 /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				76F8EBF3230A5472009A3484 /* TableViewCell.h */,
+				76F8EBF4230A5472009A3484 /* TableViewCell.m */,
+				76F8EBFA230AA0CA009A3484 /* PeriCell.h */,
+				76F8EBFB230AA0CA009A3484 /* PeriCell.m */,
+			);
+			path = CellView;
+			sourceTree = "<group>";
+		};
+		BBB6568F0E2D0CE4F46792A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00282DFEAA1A2A631A13F34D /* Pods-BlueTeethFirst.debug.xcconfig */,
+				8A394DCD8FD7F4AF10944930 /* Pods-BlueTeethFirst.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60F6FFDA2302A66200311E08 /* BlueTeethFirst */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60F6FFF12302A66300311E08 /* Build configuration list for PBXNativeTarget "BlueTeethFirst" */;
+			buildPhases = (
+				946A55A1F9574E699FEF354B /* [CP] Check Pods Manifest.lock */,
+				60F6FFD72302A66200311E08 /* Sources */,
+				60F6FFD82302A66200311E08 /* Frameworks */,
+				60F6FFD92302A66200311E08 /* Resources */,
+				F70F788CB875813E7388599C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueTeethFirst;
+			productName = BlueTeethFirst;
+			productReference = 60F6FFDB2302A66200311E08 /* BlueTeethFirst.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60F6FFD32302A66200311E08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Francis Zeng";
+				TargetAttributes = {
+					60F6FFDA2302A66200311E08 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 60F6FFD62302A66200311E08 /* Build configuration list for PBXProject "BlueTeethFirst" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60F6FFD22302A66200311E08;
+			productRefGroup = 60F6FFDC2302A66200311E08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60F6FFDA2302A66200311E08 /* BlueTeethFirst */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60F6FFD92302A66200311E08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60F6FFEB2302A66300311E08 /* LaunchScreen.storyboard in Resources */,
+				60F6FFE82302A66300311E08 /* Assets.xcassets in Resources */,
+				60F6FFE62302A66200311E08 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		946A55A1F9574E699FEF354B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlueTeethFirst-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F70F788CB875813E7388599C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlueTeethFirst/Pods-BlueTeethFirst-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlueTeethFirst/Pods-BlueTeethFirst-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlueTeethFirst/Pods-BlueTeethFirst-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60F6FFD72302A66200311E08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60F6FFE32302A66200311E08 /* ViewController.m in Sources */,
+				7664109423279F6F00D7198B /* stn_callback.mm in Sources */,
+				7664107223279F2D00D7198B /* GErrorCode.mm in Sources */,
+				7664104623279D9000D7198B /* CSRCallbacks.m in Sources */,
+				76F8EBF5230A5472009A3484 /* TableViewCell.m in Sources */,
+				7664109323279F6F00D7198B /* longlink_packer.cc in Sources */,
+				7664106F23279F2D00D7198B /* GProfile.mm in Sources */,
+				76F8EBF9230A7939009A3484 /* InfoTableViewController.m in Sources */,
+				7664109123279F6F00D7198B /* app_callback.mm in Sources */,
+				60F6FFEE2302A66300311E08 /* main.m in Sources */,
+				7664107323279F2D00D7198B /* GMessageTaskQueue.m in Sources */,
+				7664104323279D8F00D7198B /* CSRPeripheral.m in Sources */,
+				7664107023279F2D00D7198B /* GMessageTask.mm in Sources */,
+				60F6FFE02302A66200311E08 /* AppDelegate.m in Sources */,
+				766410A623279F9E00D7198B /* NetworkService.mm in Sources */,
+				7664106E23279F2D00D7198B /* GSdk.mm in Sources */,
+				76F8EBFC230AA0CA009A3484 /* PeriCell.m in Sources */,
+				76F8EBED230A4DA6009A3484 /* TableViewController.m in Sources */,
+				7664104423279D9000D7198B /* CSRConnectionManager.m in Sources */,
+				7664107123279F2D00D7198B /* GSocketInd.mm in Sources */,
+				7664109523279F6F00D7198B /* TTLog.m in Sources */,
+				766410A523279F9E00D7198B /* CGITask.mm in Sources */,
+				7664104523279D9000D7198B /* CSRBLEUtil.m in Sources */,
+				766410A423279F9E00D7198B /* NetworkStatus.m in Sources */,
+				7664104C23279DC500D7198B /* LogUtil.m in Sources */,
+				7664104F23279DD300D7198B /* LogHelper.mm in Sources */,
+				766410A323279F9E00D7198B /* NetworkEvent.m in Sources */,
+				7664109223279F6F00D7198B /* shortlink_packer.cc in Sources */,
+				76F8EBF1230A5078009A3484 /* BlueHeart.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		60F6FFE42302A66200311E08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60F6FFE52302A66200311E08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		60F6FFE92302A66300311E08 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60F6FFEA2302A66300311E08 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60F6FFEF2302A66300311E08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		60F6FFF02302A66300311E08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60F6FFF22302A66300311E08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00282DFEAA1A2A631A13F34D /* Pods-BlueTeethFirst.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NAX3BSKE2F;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "/Users/zengyiran/代码/BlueTeethFirst/PrefixHeader.pch";
+				INFOPLIST_FILE = BlueTeethFirst/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = Hernando.BlueTeethFirst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60F6FFF32302A66300311E08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A394DCD8FD7F4AF10944930 /* Pods-BlueTeethFirst.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NAX3BSKE2F;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "/Users/zengyiran/代码/BlueTeethFirst/PrefixHeader.pch";
+				INFOPLIST_FILE = BlueTeethFirst/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = Hernando.BlueTeethFirst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60F6FFD62302A66200311E08 /* Build configuration list for PBXProject "BlueTeethFirst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60F6FFEF2302A66300311E08 /* Debug */,
+				60F6FFF02302A66300311E08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60F6FFF12302A66300311E08 /* Build configuration list for PBXNativeTarget "BlueTeethFirst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60F6FFF22302A66300311E08 /* Debug */,
+				60F6FFF32302A66300311E08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60F6FFD32302A66200311E08 /* Project object */;
+}
